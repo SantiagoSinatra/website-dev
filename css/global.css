@@ -28,6 +28,10 @@ header {
     font-size: 16px;
 }
 
+#header-h1 {
+    transition: opacity 1s;
+}
+
 .hamburguer-button {
     width: 35px;
     height: 35px;
@@ -38,4 +42,12 @@ header {
     -webkit-mask-image: url(../assets/header/header-menu-icon.svg);
     -webkit-mask-position: center;
     -webkit-mask-size: cover;
+}
+
+@media screen and (min-width: 577px) {
+    .header-container {
+        background-image: url(../assets/header/header-bg-md.svg);
+        background-size: 768px;
+
+    }
 }
