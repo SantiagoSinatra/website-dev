@@ -29,7 +29,29 @@ header {
 }
 
 #header-h1 {
+    width: 224px;
     transition: opacity 1s;
+}
+
+header nav {
+    display: none;
+    padding-top: 5px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    column-gap: 10px;
+}
+
+a {
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
 }
 
 .hamburguer-button {
@@ -49,5 +71,20 @@ header {
         background-image: url(../assets/header/header-bg-md.svg);
         background-size: 768px;
 
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-container {
+        background-image: url(../assets/header/header-bg-lg.svg);
+        background-size: 992px;
+    }
+
+    #header-hamburguer-button {
+        display: none;
+    }
+
+    header nav {
+        display: block;
     }
 }
